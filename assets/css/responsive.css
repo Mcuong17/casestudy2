@@ -1,0 +1,80 @@
+/* PC */
+@media only screen and (min-width: 1024px) and (max-width: 1239px) {
+    
+}
+
+/* Tablet */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .accout-cart {
+        width: 60% !important;
+        margin: auto;
+    }
+    
+}
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+    .logo {
+        margin-top: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .accout-cart {
+        border: none;
+    }
+    .slider__section {
+        display: none;
+    }
+}
+
+/* Mobile and tablet: width < 1024px */
+@media only screen and (max-width: 63.9375em ) {
+    .header-top {
+        display: none;
+    }
+    .search__container {
+        display: none;
+    }
+    .categories__menu {
+        width: 100%;
+        background-color: #79A206;
+    }
+    .nav__menu,
+    .call-support {
+        display: none;
+    }
+    .nav__menu-mobile {
+        display: block;
+    }
+    .footer {
+        text-align: center;
+    }
+    .footer__title {
+        margin: 20px 0 0 10px;
+    }
+    .footer__desc {
+        margin: 4px 0 0 0;
+    }
+    .footer__title::before {
+        display: none;
+    }
+
+    /* product */
+    .product__contact {
+        display: none;
+    }
+    .product__title {
+        margin-top: 20px;
+    }
+    .product__social {
+        margin-bottom: 16px;
+    }
+    /* cart */
+    .cart__coupon-code {
+        margin-bottom: 20px;
+    }
+    .cart__coupon-box input {
+        margin-bottom: 10px;
+    }
+}

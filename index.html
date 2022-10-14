@@ -1,0 +1,2084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lukani store</title>
+    <link rel="stylesheet" href="./assets/scss/style.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/all.css">
+    <script src="./assets/fonts/fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/js/all.js" ></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- Begin Header -->
+        <header id="header">
+            <div class="header-top col-lg-12">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-7 col-md-7 d-flex align-content-center ">
+                            <div class="welcome-text">
+                                <p>Free Delivery: Take advantage of our time to save event</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5 d-flex justify-content-end text-end">
+                            <div class="language-curency">
+                                <div class="currency">
+                                    <div class="dropdown">
+                                        <a class="btn language-curency-link dropdown-toggle shadow-none" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" >
+                                            USD
+                                        </a>
+                                      
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                          <li><a class=" language-curency-link dropdown-item" href="#">VND</a></li>
+                                          <li><a class=" language-curency-link dropdown-item" href="#">EUR</a></li>
+                                          <li><a class=" language-curency-link dropdown-item" href="#">RUP</a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="language">
+                                <div class="dropdown">
+                                    <a class="btn language-curency-link dropdown-toggle shadow-none" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" >
+                                        English
+                                    </a>
+                                  
+                                    <ul class="dropdown-menu language-curency-link" aria-labelledby="dropdownMenuLink">
+                                      <li><a class=" language-curency-link dropdown-item" href="#">Vietnamese</a></li>
+                                      <li><a class=" language-curency-link dropdown-item" href="#">Rusian</a></li>
+                                      <li><a class=" language-curency-link dropdown-item" href="#">Secs</a></li>
+                                    </ul>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-middle">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-3 col-md-4 col-12 ">
+                            <div class="logo">
+                                <a href="./index.html" class="logo__link">
+                                    <img src="./assets/image/logo.webp" alt="logo-image" class="logo__img">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-8 col-12">
+                            <div class="header__right d-flex align-items-center justify-content-between">
+                                <div class="search__container">
+                                    <form class="search__container-form d-flex justify-content-between align-items-center" action="#">
+                                        <input type="text" placeholder="Search product..">
+                                        <button type="submit">
+                                            <ion-icon name="search-outline"></ion-icon>
+                                        </button>
+                                    </form>
+                                </div>
+                                <!-- Cart -->
+                                <div class="accout-cart d-flex justify-content-between col-lg-3 col-md-4 col-6 text-center">
+                                    <div class="accout">
+                                        <i class="fa-solid fa-user accout__icon"></i>
+                                        <ul class="accout__list">
+                                            <li class="accout__item">
+                                                <a href="" class="accout__link text-start">
+                                                    Check out
+                                                </a>
+                                            </li>
+                                            <li class="accout__item">
+                                                <a href="" class="accout__link">
+                                                    Check out
+                                                </a>
+                                            </li>
+                                            <li class="accout__item">
+                                                <a href="" class="accout__link">
+                                                    Check out
+                                                </a>
+                                            </li>
+                                            <li class="accout__item">
+                                                <a href="" class="accout__link">
+                                                    Check out
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="liked">
+                                        <i class="fa-solid fa-heart heart"></i>
+                                    </div>
+                                    <div class="cart">
+                                        <nav class="cart__quantity">2</nav>
+                                        <label class="cart__btn" for="cart__input-check">
+                                            <i class="fa-solid fa-cart-shopping cart__icon"></i>
+                                        </label>
+
+                                        <input type="checkbox" hidden name="" id="cart__input-check" class="cart__input">
+                                        <label for="cart__input-check" class="cart__overlay"></label>
+                                        <nav class="cart__box">
+                                            <ul class="cart__list ">
+                                                <li class="cart__item d-flex justify-content-between border-bottom">
+                                                    <p class="fs-5" >Cart</p>
+                                                    <label for="cart__input-check" class="cart__close">
+                                                        <i class="fs-5 fa-solid fa-xmark"></i>
+                                                    </label>
+                                                </li>
+                                                <li class="cart__item d-flex border-bottom justify-content-around">
+                                                    <div class="cart__img">
+                                                        <img src="./assets/image/cart-img.webp" alt="">
+                                                    </div>
+                                                    <div class="cart__text">
+                                                        <a href="#" class="card__link"> Primis In Faucibus</a>
+                                                        <p>1 x $65.000</p>
+                                                    </div>
+                                                    <div class="cart__delete">
+                                                        <ion-icon name="close-outline"></ion-icon>
+                                                    </div>
+                                                </li>
+                                                <li class="cart__item d-flex border-bottom justify-content-around">
+                                                    <div class="cart__img">
+                                                        <img src="./assets/image/cart-img2.webp" alt="">
+                                                    </div>
+                                                    <div class="cart__text">
+                                                        <a href="#" class="card__link"> Letraset Sheets</a>
+                                                        <p>1 x $60.000</p>
+                                                    </div>
+                                                    <div class="cart__delete">
+                                                        <ion-icon name="close-outline"></ion-icon>
+                                                    </div>
+                                                </li>
+                                                <li class="cart__item d-flex border-bottom justify-content-between">
+                                                    
+                                                        <p class="">Sub total: <br>
+                                                                    total:
+                                                        </p>
+                                                        <p class="fw-bold"> $125.00 <br>
+                                                                    $125.00  
+                                                        </p>
+                                                </li>
+                                                <li class="cart__item ">
+                                                    <a href="./cart.html" class="cart__view btn__cart"  >
+                                                        <ion-icon name="cart-outline"></ion-icon>
+                                                        View cart
+                                                    </a>
+                                                    <button class="card__check btn__cart btn__active">
+                                                        <ion-icon name="exit-outline"></ion-icon>
+                                                        Check out
+                                                     </button>   
+                                                </li>
+                                                
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <!-- Nav-menu mobile -->
+                                <div class="nav__menu-mobile col-md-4 col-6 text-end ">
+                                    <label class="nav__menu-mobile-btn" for="nav__menu-mobile-check">
+                                        <ion-icon name="menu-outline"></ion-icon>
+                                    </label>
+
+                                    <input type="checkbox" hidden name="" id="nav__menu-mobile-check" class="nav__menu-mobile-input">
+                                    <label for="nav__menu-mobile-check" class="mobile__overlay"></label>
+                                    <nav class="nav__menu-mobile-box">
+                                        <label for="nav__menu-mobile-check" class="nav__menu-mobile-close">
+                                            <i class="fs-5 fa-solid fa-xmark"></i>
+                                        </label>
+                                        <ul class="nav__menu-mobile-list ">
+                                            <li class="nav__menu-mobile-item col-12 text-center">
+                                                <p class="fs-6">
+                                                    Free Delivery: Take advantage of our time to save event
+                                                </p>
+                                            </li>
+                                            <li class="nav__menu-mobile-item d-flex ">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-12 d-flex justify-content-center text-center">
+                                                            <div class="language-curency">
+                                                                <div class="currency">
+                                                                    <div class="dropdown">
+                                                                        <a class="btn language-curency-link dropdown-toggle shadow-none" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" >
+                                                                            USD
+                                                                        </a>
+                                                                      
+                                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                                          <li><a class=" language-curency-link dropdown-item" href="#">VND</a></li>
+                                                                          <li><a class=" language-curency-link dropdown-item" href="#">EUR</a></li>
+                                                                          <li><a class=" language-curency-link dropdown-item" href="#">RUP</a></li>
+                                                                        </ul>
+                                                                      </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="language">
+                                                                <div class="dropdown">
+                                                                    <a class="btn language-curency-link dropdown-toggle shadow-none" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" >
+                                                                        English
+                                                                    </a>
+                                                                  
+                                                                    <ul class="dropdown-menu language-curency-link" aria-labelledby="dropdownMenuLink">
+                                                                      <li><a class=" language-curency-link dropdown-item" href="#">Vietnamese</a></li>
+                                                                      <li><a class=" language-curency-link dropdown-item" href="#">Rusian</a></li>
+                                                                      <li><a class=" language-curency-link dropdown-item" href="#">Secs</a></li>
+                                                                    </ul>
+                                                                  </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="nav__menu-mobile-item d-flex align-items-center ">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <form class="search__container-form d-flex justify-content-between align-items-center my-4 border-1 " action="#">
+                                                            <input type="text" placeholder="Search product.." class="border-0">
+                                                            <button type="submit" class="border-0 bgr-none fs-4">
+                                                                <ion-icon name="search-outline"></ion-icon>
+                                                            </button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="nav__menu-mobile-item d-flex align-items-center justify-content-center">
+                                                <p class="fs-6">
+                                                    Call Support: 0123456789
+                                                </p>
+                                            </li>
+                                            <li class="nav__menu-mobile-item d-flex border-bottom text-start ">
+                                                <a href="./index.html" class="nav__menu-mobile-link">Home</a>
+                                            </li>
+                                            <li class="nav__menu-mobile-item d-flex border-bottom text-start ">
+                                                <a href="#our__product" class="nav__menu-mobile-link">Shop</a>
+                                            </li>
+                                            <li class="nav__menu-mobile-item d-flex border-bottom text-start ">
+                                                <a href="" class="nav__menu-mobile-link">Blog</a>
+                                            </li>
+                                            <li class="nav__menu-mobile-item d-flex border-bottom text-start ">
+                                                <a href="" class="nav__menu-mobile-link">Pages</a>
+                                            </li>
+                                            <li class="nav__menu-mobile-item d-flex border-bottom text-start ">
+                                                <a href="" class="nav__menu-mobile-link">My Account</a>
+                                            </li>
+                                            <li class="nav__menu-mobile-item d-flex border-bottom text-start ">
+                                                <a href="" class="nav__menu-mobile-link">About Us</a>
+                                            </li>
+                                            <li class="nav__menu-mobile-item d-flex border-bottom text-start ">
+                                                <a href="" class="nav__menu-mobile-link">Contact Us</a>
+                                            </li>
+                                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </header>
+        <div class="sticky-top" style="z-index: 2;">
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-3 col-12 categories__menu">
+                            <div class="dropdown">
+                                <button class="btn shadow-none d-flex align-items-center" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <ion-icon name="apps-outline"></ion-icon>  Categories
+                                </button>
+                                <ul class="dropdown-menu categories__list" aria-labelledby="dropdownMenu2">
+                                <li><button class="dropdown-item" type="button">Home</button></li> 
+                                  <li><button class="dropdown-item" type="button">Brake Parts</button></li>
+                                  <li><button class="dropdown-item" type="button">Trees</button></li>
+                                  <li><button class="dropdown-item" type="button">Plant Families</button></li>
+                                  <li><button class="dropdown-item" type="button">Lighning</button></li>
+                                  <li><button class="dropdown-item" type="button">Accesories</button></li>
+                                  <li><button class="dropdown-item" type="button">Body Parts</button></li>
+                                </ul>
+                              </div>
+                        </div>
+                        <div class="col-lg-6 col-md-5 col-0  nav__menu">
+                            <nav class="navbar navbar-expand-lg">
+                                <div class="container-fluid">
+                                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                     
+                                      <li class="nav-item dropdown menu__items">
+                                        <a class="nav-link dropdown-toggle menu__tab" href="./index.html" id="navbarDropdown"  data-bs-toggle="dropdown">
+                                          Home
+                                        </a>
+                                        <ul class="dropdown-menu menu__list-dropdown border-0" aria-labelledby="navbarDropdown">
+                                          <li><a class="dropdown-item" href="#header">Home Shop 1</a></li>
+                                          <li><a class="dropdown-item" href="#">Home Shop 2</a></li>
+                                          <li><a class="dropdown-item" href="#">Home Shop 3</a></li>
+                                          <li><a class="dropdown-item" href="#">Home Shop 4</a></li>
+                                          <li><a class="dropdown-item" href="#">Home Shop 5</a></li>
+                                        </ul>
+                                      </li>
+                                      <li class="nav-item dropdown menu__items">
+                                        <a class="nav-link dropdown-toggle menu__tab" href="#" id="navbarDropdown"  data-bs-toggle="dropdown">
+                                          Shop
+                                        </a>
+                                        <ul class="dropdown-menu menu__list-dropdown border-0" aria-labelledby="navbarDropdown">
+                                          <li><a class="dropdown-item" href="#our__product">Shop Layout</a></li>
+                                          <li><a class="dropdown-item" href="#sale__product">Other Pages</a></li>
+                                          <li><a class="dropdown-item" href="#deals">Product Detail</a></li>
+                                          <li><a class="dropdown-item" href="#">Show More</a></li>
+                                        </ul>
+                                      </li>
+                                      <li class="nav-item dropdown menu__items">
+                                        <a class="nav-link dropdown-toggle menu__tab" href="#" id="navbarDropdown"  data-bs-toggle="dropdown">
+                                          Blog
+                                        </a>
+                                        <ul class="dropdown-menu menu__list-dropdown border-0" aria-labelledby="navbarDropdown">
+                                          <li><a class="dropdown-item" href="#blog">Blog Detail</a></li>
+                                          <li><a class="dropdown-item" href="#blog">Blog Nav</a></li>
+                                          <li><a class="dropdown-item" href="#blog">Blog Sidebar</a></li>
+                                          <li><a class="dropdown-item" href="#blog">Blog Footer</a></li>
+                                          <li><a class="dropdown-item" href="#blog">Blog FullWidth</a></li>
+                                        </ul>
+                                      </li>
+                                      <li class="nav-item dropdown menu__items">
+                                        <a class="nav-link dropdown-toggle menu__tab" href="#" id="navbarDropdown"  data-bs-toggle="dropdown">
+                                          Page
+                                        </a>
+                                        <ul class="dropdown-menu menu__list-dropdown border-0" aria-labelledby="navbarDropdown">
+                                          <li><a class="dropdown-item" href="#">About Us</a></li>
+                                          <li><a class="dropdown-item" href="#">Service</a></li>
+                                          <li><a class="dropdown-item" href="#">Contact</a></li>
+                                          <li><a class="dropdown-item" href="#">Login</a></li>
+                                          <li><a class="dropdown-item" href="#">Eror 404</a></li>
+                                        </ul>
+                                      </li>
+                                      <li class="nav-item nav__items">
+                                        <a class="nav-link menu__tab" href="#mail">Contact Us</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </nav>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="call-support">
+                                Call Support: 0123456789
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- End Header -->
+
+        <!-- Begin Main -->
+        <main>
+            <!-- Slide -->
+            <section class="slider__section">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./assets/image/slider1.webp" class="d-block w-100" alt="...">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="carousel-caption d-none d-md-block slider__content">
+                                        <h5>Big Sale</h5>
+                                        <p>Discount <span>20% Off</span> For Lukani Members</p>
+                                        <div class="btn__box">
+                                            <a class="btn__discover">Discover now</a>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/image/slider2.webp" class="d-block w-100" alt="...">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="carousel-caption d-none d-md-block slider__content">
+                                        <h5>Top Sale</h5>
+                                        <p>Discount <span>20% Off</span> For Lukani Members</p>
+                                        <div class="btn__box">
+                                            <a class="btn__discover">Discover now</a>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/image/slider3.webp" class="d-block w-100" alt="...">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="carousel-caption d-none d-md-block slider__content">
+                                        <h5>Lovely Plants</h5>
+                                        <p>Discount <span>20% Off</span> For Lukani Members</p>
+                                        <div class="btn__box">
+                                            <a class="btn__discover">Discover now</a>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </section>
+
+            <!-- Sale Product -->
+            <section class="sale py-4" id="sale__product">
+                <div class="container sale__product">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="sale__product-img">
+                                <img src="./assets/image/sale__product1.webp" alt="">
+                                <span class="sale__product-content">
+                                    <h3>Big Sale Products</h3>
+                                    <h2>
+                                        Plants
+                                    </h2>
+                                    <h2>
+                                        For Interior
+                                    </h2>
+                                    <a href="#">
+                                        Shop Now
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="sale__product-img">
+                                <img src="./assets/image/sale__product2.webp" alt="">
+                                <span class="sale__product-content">
+                                    <h3>Top Products</h3>
+                                    <h2>
+                                        Plants
+                                    </h2>
+                                    <h2>
+                                        For Healthy
+                                    </h2>
+                                    <a href="#">
+                                        Shop Now
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Our Product -->
+            <section class="our__product py-4" id="our__product">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 class="our__title">
+                                Our Products
+                            </h2>
+                            <span class="our__line"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <ul class="our__list">
+                                <li class="our__item">
+                                    <a href="#" class="our__link">
+                                        PLANT STANDS & MOVERS
+                                    </a>
+                                </li>
+                                <li class="our__item">
+                                    <a href="#" class="our__link">
+                                        PLANT FAMILIES
+                                    </a>
+                                </li>
+                                <li class="our__item">
+                                    <a href="#" class="our__link">
+                                        OUTDOOR PLANT POTS
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Product slide -->
+                    <div class="row">
+                       <!--  <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" >
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" data-bs-interval="10000">
+                                <div class="row">
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-7%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product1.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Commodo Augue Nisi</p>
+                                          <a href="#" class="btn btn__product">£65.00 <span class="old__price">£70.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-7%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product1.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Commodo Augue Nisi</p>
+                                          <a href="#" class="btn btn__product">£65.00 <span class="old__price">£70.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-7%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product1.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Commodo Augue Nisi</p>
+                                          <a href="#" class="btn btn__product">£65.00 <span class="old__price">£70.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-7%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product1.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Commodo Augue Nisi</p>
+                                          <a href="#" class="btn btn__product">£65.00 <span class="old__price">£70.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-7%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product1.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Commodo Augue Nisi</p>
+                                          <a href="#" class="btn btn__product">£65.00 <span class="old__price">£70.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-7%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product1.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Commodo Augue Nisi</p>
+                                          <a href="#" class="btn btn__product">£65.00 <span class="old__price">£70.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-7%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product1.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Commodo Augue Nisi</p>
+                                          <a href="#" class="btn btn__product">£65.00 <span class="old__price">£70.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-7%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product1.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Commodo Augue Nisi</p>
+                                          <a href="#" class="btn btn__product">£65.00 <span class="old__price">£70.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="row">
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-7%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product3.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Commodo Augue Nisi</p>
+                                          <a href="#" class="btn btn__product">£65.00 <span class="old__price">£70.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-7%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product1.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Commodo Augue Nisi</p>
+                                          <a href="#" class="btn btn__product">£65.00 <span class="old__price">£70.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-7%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product1.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Commodo Augue Nisi</p>
+                                          <a href="#" class="btn btn__product">£65.00 <span class="old__price">£70.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-7%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product1.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Commodo Augue Nisi</p>
+                                          <a href="#" class="btn btn__product">£65.00 <span class="old__price">£70.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-7%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product1.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Commodo Augue Nisi</p>
+                                          <a href="#" class="btn btn__product">£65.00 <span class="old__price">£70.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-7%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product1.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Commodo Augue Nisi</p>
+                                          <a href="#" class="btn btn__product">£65.00 <span class="old__price">£70.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-7%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product1.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Commodo Augue Nisi</p>
+                                          <a href="#" class="btn btn__product">£65.00 <span class="old__price">£70.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-7%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product1.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Commodo Augue Nisi</p>
+                                          <a href="#" class="btn btn__product">£65.00 <span class="old__price">£70.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                          </div> -->
+
+                          <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-7%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product1.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Commodo Augue Nisi</p>
+                                          <a href="#" class="btn btn__product">£65.00 <span class="old__price">£70.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-6%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product3.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Fringilla Augue</p>
+                                          <a href="#" class="btn btn__product">£68.00 <span class="old__price">£75.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-8%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product5.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Placerat Vestibulum</p>
+                                          <a href="#" class="btn btn__product">£65.00 <span class="old__price">£70.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-4%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product7.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Sapien Librero</p>
+                                          <a href="#" class="btn btn__product">£69.00 <span class="old__price">£74.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-9%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product2.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Eget Sagitist</p>
+                                          <a href="#" class="btn btn__product">£65.00 <span class="old__price">£70.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-5%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product4.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Massa Massa</p>
+                                          <a href="#" class="btn btn__product">£75.00 <span class="old__price">£80.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-9%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product6.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Porro Cook</p>
+                                          <a href="#" class="btn btn__product">£62.00 <span class="old__price">£68.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-6%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product8.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Vulputate Rutrum</p>
+                                          <a href="#" class="btn btn__product">£64.00 <span class="old__price">£72.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="row">
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-8%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product9.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Adipiscing Cursus</p>
+                                          <a href="#" class="btn btn__product">£60.00 <span class="old__price">£70.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-7%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product1.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Commodo Augue Nisi</p>
+                                          <a href="#" class="btn btn__product">£65.00 <span class="old__price">£70.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-6%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product6.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Fringilla Augue</p>
+                                          <a href="#" class="btn btn__product">£68.00 <span class="old__price">£75.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-8%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product9.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Placerat Vestibulum</p>
+                                          <a href="#" class="btn btn__product">£65.00 <span class="old__price">£70.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-9%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product10.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Donec Eu Cook </p>
+                                          <a href="#" class="btn btn__product">£67.00 <span class="old__price">£77.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-9%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product5.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Eget Sagitis</p>
+                                          <a href="#" class="btn btn__product">£65.00 <span class="old__price">£70.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-5%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product7.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Massa Massa</p>
+                                          <a href="#" class="btn btn__product">£75.00 <span class="old__price">£80.00</span> </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card card__product border-0 col-lg-3 col-md-6 col-12">
+                                        <span class="discount">-9%</span>
+                                        <div class="body__product">
+                                            <img src="./assets/image/product9.webp" class="card-img-top" alt="img-product">
+                                            <span class="nav__product d-flex align-items-center justify-content-around ">
+                                                <a href="/cart.html" class="nav__product-link">
+                                                    <ion-icon name="bag-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="mail-outline"></ion-icon>
+                                                </a>
+                                                <a href="" class="nav__product-link">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </a>
+                                                <a href="./product.html" class="nav__product-link">
+                                                    <ion-icon name="eye-outline"></ion-icon>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="card-body text-center">
+                                          <h5 class="card-title">
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            <i class="fa-regular fa-star star__product"></i>
+                                            </h5>
+                                          <p class="card-text name__product">Porro Cook</p>
+                                          <a href="#" class="btn btn__product">£62.00 <span class="old__price">£68.00</span> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                              <span class="carousel-control-next-icon"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>  
+                    </div>
+                </div>
+            </section>
+
+            <!-- Today Deals -->
+            <section class="deals py-5" id="deals">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 class="our__title">
+                                Today Deals
+                            </h2>
+                            <span class="our__line"></span>
+                        </div>
+                    </div>
+                        <div class="deals__product row gray-bgr">
+                            
+                            <div class="card card__product deals__product-items border-0 opacity-50 gray-bgr col-lg-3 col-md-6 col-12 ">
+                                <span class="discount">-7%</span>
+                                <div class="body__product">
+                                    <img src="./assets/image/product1.webp" class="card-img-top" alt="img-product">
+                                    <span class="nav__product nav__deals d-flex align-items-center justify-content-between w-100">
+                                        <a href="" class="nav__product-link nav__deals-link">
+                                            <p class="day">65</p>
+                                            <hr>
+                                            <p class="title">DAYS</p>
+                                        </a>
+                                        <a href="" class="nav__product-link nav__deals-link">
+                                            <p class="day">06</p>
+                                            <hr>
+                                            <p class="title">HOURS</p>
+                                        </a>
+                                        <a href="" class="nav__product-link nav__deals-link">
+                                            <p class="day">54</p>
+                                            <hr>
+                                            <p class="title">MINS</p>
+                                        </a>
+                                        <a href="" class="nav__product-link nav__deals-link">
+                                            <p class="day">02</p>
+                                            <hr>
+                                            <p class="title">SECS</p>
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="card-body text-center gray-bgr">
+                                  <h5 class="card-title">
+                                    <i class="fa-regular fa-star star__product"></i>
+                                    <i class="fa-regular fa-star star__product"></i>
+                                    <i class="fa-regular fa-star star__product"></i>
+                                    <i class="fa-regular fa-star star__product"></i>
+                                    <i class="fa-regular fa-star star__product"></i>
+                                    </h5>
+                                  <p class="card-text name__product">Commodo Augue Nisi</p>
+                                  <a href="#" class="btn btn__product">£65.00 <span class="old__price">£70.00</span> </a>
+                                </div>
+                            </div>
+                            <div class="card card__product deals__product-items border-0 opacity-50 gray-bgr col-lg-3 col-md-6 col-12">
+                                <span class="discount">-9%</span>
+                                <div class="body__product">
+                                    <img src="./assets/image/product3.webp" class="card-img-top" alt="img-product">
+                                    <span class="nav__product nav__deals d-flex align-items-center justify-content-between w-100">
+                                        <a href="" class="nav__product-link nav__deals-link">
+                                            <p class="day">65</p>
+                                            <hr>
+                                            <p class="title">DAYS</p>
+                                        </a>
+                                        <a href="" class="nav__product-link nav__deals-link">
+                                            <p class="day">06</p>
+                                            <hr>
+                                            <p class="title">HOURS</p>
+                                        </a>
+                                        <a href="" class="nav__product-link nav__deals-link">
+                                            <p class="day">54</p>
+                                            <hr>
+                                            <p class="title">MINS</p>
+                                        </a>
+                                        <a href="" class="nav__product-link nav__deals-link">
+                                            <p class="day">02</p>
+                                            <hr>
+                                            <p class="title">SECS</p>
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="card-body text-center gray-bgr">
+                                  <h5 class="card-title">
+                                    <i class="fa-regular fa-star star__product"></i>
+                                    <i class="fa-regular fa-star star__product"></i>
+                                    <i class="fa-regular fa-star star__product"></i>
+                                    <i class="fa-regular fa-star star__product"></i>
+                                    <i class="fa-regular fa-star star__product"></i>
+                                    </h5>
+                                  <p class="card-text name__product">Eget Sagittis</p>
+                                  <a href="#" class="btn btn__product">£65.00 <span class="old__price">£70.00</span> </a>
+                                </div>
+                            </div>
+                            <div class="card card__product deals__product-items border-0 opacity-50 gray-bgr col-lg-3 col-md-6 col-12">
+                                <span class="discount">-6%</span>
+                                <div class="body__product">
+                                    <img src="./assets/image/product7.webp" class="card-img-top" alt="img-product">
+                                    <span class="nav__product nav__deals d-flex align-items-center justify-content-between w-100">
+                                        <a href="" class="nav__product-link nav__deals-link">
+                                            <p class="day">65</p>
+                                            <hr>
+                                            <p class="title">DAYS</p>
+                                        </a>
+                                        <a href="" class="nav__product-link nav__deals-link">
+                                            <p class="day">06</p>
+                                            <hr>
+                                            <p class="title">HOURS</p>
+                                        </a>
+                                        <a href="" class="nav__product-link nav__deals-link">
+                                            <p class="day">54</p>
+                                            <hr>
+                                            <p class="title">MINS</p>
+                                        </a>
+                                        <a href="" class="nav__product-link nav__deals-link">
+                                            <p class="day">02</p>
+                                            <hr>
+                                            <p class="title">SECS</p>
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="card-body text-center gray-bgr">
+                                  <h5 class="card-title">
+                                    <i class="fa-regular fa-star star__product"></i>
+                                    <i class="fa-regular fa-star star__product"></i>
+                                    <i class="fa-regular fa-star star__product"></i>
+                                    <i class="fa-regular fa-star star__product"></i>
+                                    <i class="fa-regular fa-star star__product"></i>
+                                    </h5>
+                                  <p class="card-text name__product">Fringilla Augue</p>
+                                  <a href="#" class="btn btn__product">£68.00 <span class="old__price">£75.00</span> </a>
+                                </div>
+                            </div>
+                            <div class="card card__product deals__product-items border-0 opacity-50 gray-bgr col-lg-3 col-md-6 col-12">
+                                <span class="discount">-5%</span>
+                                <div class="body__product">
+                                    <img src="./assets/image/product10.webp" class="card-img-top" alt="img-product">
+                                    <span class="nav__product nav__deals d-flex align-items-center justify-content-between w-100">
+                                        <a href="" class="nav__product-link nav__deals-link">
+                                            <p class="day">65</p>
+                                            <hr>
+                                            <p class="title">DAYS</p>
+                                        </a>
+                                        <a href="" class="nav__product-link nav__deals-link">
+                                            <p class="day">06</p>
+                                            <hr>
+                                            <p class="title">HOURS</p>
+                                        </a>
+                                        <a href="" class="nav__product-link nav__deals-link">
+                                            <p class="day">54</p>
+                                            <hr>
+                                            <p class="title">MINS</p>
+                                        </a>
+                                        <a href="" class="nav__product-link nav__deals-link">
+                                            <p class="day">02</p>
+                                            <hr>
+                                            <p class="title">SECS</p>
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="card-body text-center gray-bgr">
+                                  <h5 class="card-title">
+                                    <i class="fa-regular fa-star star__product"></i>
+                                    <i class="fa-regular fa-star star__product"></i>
+                                    <i class="fa-regular fa-star star__product"></i>
+                                    <i class="fa-regular fa-star star__product"></i>
+                                    <i class="fa-regular fa-star star__product"></i>
+                                    </h5>
+                                  <p class="card-text name__product">Massa Massa</p>
+                                  <a href="#" class="btn btn__product">£75.00 <span class="old__price">£80.00</span> </a>
+                                </div>
+                            </div>
+                        </div>      
+                </div>
+            </section>
+
+            <!-- Testimonial -->
+            <section class="testimonail py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 class="our__title">
+                                What Our Customers Says ?
+                            </h2>
+                            <span class="our__line"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center py-2">
+                            <img src="./assets/image/testimonials-icon.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 testimonail__body">
+                            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <span class="testimonail__desc">
+                                        “ When a beautiful design is combined with powerful technology, 
+                                        <br>
+                                        it truly is an artwork. I love how my website operates and looks with this
+                                        theme. Thank you for the awesome product. ”
+                                    </span>
+                                      <img src="./assets/image/testimonial1.webp" class="d-block w-100  testimonail__img" alt="...">
+                                      
+                                    <div class="testimonail__name">
+                                        <p> <a href="">Amber Laha</a> / <span>Ceo of DND</span> </p> 
+
+                                    </div>
+                                  </div>
+
+                                  <div class="carousel-item">
+                                    <span class="testimonail__desc">
+                                        “ When a beautiful design is combined with powerful technology, 
+                                        <br>
+                                        it truly is an artwork. I love how my website operates and looks with this
+                                        theme. Thank you for the awesome product. ”
+                                    </span>
+                                      <img src="./assets/image/testimonial2.webp" class="d-block w-100  testimonail__img" alt="...">
+                                      
+                                    <div class="testimonail__name">
+                                        <p> <a href="">Amber Laha</a> / <span>Ceo of DND</span> </p> 
+
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <span class="testimonail__desc">
+                                        “ When a beautiful design is combined with powerful technology, 
+                                        <br>
+                                        it truly is an artwork. I love how my website operates and looks with this
+                                        theme. Thank you for the awesome product. ”
+                                    </span>
+                                      <img src="./assets/image/testimonial3.webp" class="d-block w-100  testimonail__img" alt="...">
+                                      
+                                    <div class="testimonail__name">
+                                        <p> <a href="">Amber Laha</a> / <span>Ceo of DND</span> </p> 
+
+                                    </div>
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Post -->
+            <section class="posts py-5 gray-bgr" id="blog">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 class="our__title">
+                                Our Latest Posts
+                            </h2>
+                            <span class="our__line"></span>
+                        </div>
+                    </div>
+
+                    <div class="row post__body ">
+                        <div class="post__items col-lg-4 col-md-6 col-12">
+                            <div class="card border-0">
+                                <img src="./assets/image/blog1.webp" class="card-img-top" alt="blog1">
+                                <div class="card-body post__content my-1 px-3">
+                                  <a class="card-title post__name">Libero Lorem </a>
+                                  <p class="post__time">By <span>admin/July 16, 2021</span></p>
+                                  <p class="card-text post__desc">Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras
+                                    pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus praesent</p>
+                                  <div class="post__comment d-flex justify-content-between align-items-center">
+                                    <a href="">
+                                        Continue Reading
+                                    </a>
+                                    <span>
+                                        <ion-icon name="mail-open-outline"></ion-icon> 0
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="post__items col-lg-4 col-md-6 col-12">
+                            <div class="card border-0">
+                                <img src="./assets/image/blog2.webp" class="card-img-top" alt="blog1">
+                                <div class="card-body post__content my-1 px-3">
+                                  <a class="card-title post__name">Libero Lorem </a>
+                                  <p class="post__time">By <span>admin/July 16, 2021</span></p>
+                                  <p class="card-text post__desc">Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras
+                                    pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus praesent</p>
+                                  <div class="post__comment d-flex justify-content-between align-items-center">
+                                    <a href="">
+                                        Continue Reading
+                                    </a>
+                                    <span>
+                                        <ion-icon name="mail-open-outline"></ion-icon> 0
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="post__items col-lg-4 col-md-6 col-12">
+                            <div class="card border-0">
+                                <img src="./assets/image/blog3.webp" class="card-img-top" alt="blog1">
+                                <div class="card-body post__content my-1 px-3">
+                                  <a class="card-title post__name">Libero Lorem </a>
+                                  <p class="post__time">By <span>admin/July 16, 2021</span></p>
+                                  <p class="card-text post__desc">Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras
+                                    pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus praesent</p>
+                                  <div class="post__comment d-flex justify-content-between align-items-center">
+                                    <a href="">
+                                        Continue Reading
+                                    </a>
+                                    <span>
+                                        <ion-icon name="mail-open-outline"></ion-icon> 0
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sale-of -->
+            <section class="sale-of py-5" id="mail">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 class="our__title">
+                                Get <span>20% Off</span>  Your Next Order
+                            </h2>
+                            <span class="our__line"></span>
+                        </div>
+                    </div>
+                    <div class="row col-12 sale-of__mail">
+                        <div class="sale-of__body d-flex align-items-center justify-content-center">
+                            <div class="sale-of__icon">
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </div>
+                            <input type="text" class="sale-of__input" placeholder="Enter you email">
+                            <a href="" class="sale-of__sub">
+                                SUBSRIBE
+                            </a>
+                        </div>
+                        
+                    </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="py-5 footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-6 col-12">
+                        <div class="footer__title">
+                            Openning Time
+                            
+                        </div>
+                        <div class="footer__time">
+                            <p> Mon - Fri: 8AM - 10PM <br>
+                                Sat: 9AM - 8PM <br>
+                                Suns: 14hPM - 18hPM <br>
+                            </p>
+                        </div>
+                        <div class="footer__desc">
+                            We Work All The Holidays 
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 col-12">
+                        <div class="footer__title">
+                            Information 
+                        </div>
+                        <div class="footer__time">
+                            <a href="#"> About Us </a> <br>
+                            <a href="#"> Checkout </a> <br>    
+                            <a href="#"> Contact </a> <br>
+                            <a href="#"> Frequently Questions </a> <br>
+                            <a href="#"> Wishlist </a> <br>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-12 text-center">
+                        <div class="footer__img">
+                            <img src="./assets/image/logo.webp" alt="">
+                        </div>
+                        <ul class="footer__list d-flex align-items-center justify-content-around">
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    Payment
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    Affiliates
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    Contact
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    Internet
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer__icon-list d-flex align-items-center justify-content-around">
+                            <li class="footer__icon-item">
+                                <a href="" class="footer__icon-link">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="footer__icon-item">
+                                <a href="" class="footer__icon-link">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="footer__icon-item">
+                                <a href="" class="footer__icon-link">
+                                    <ion-icon name="logo-google"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="footer__icon-item">
+                                <a href="" class="footer__icon-link">
+                                    <ion-icon name="logo-youtube"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="footer__app d-flex align-items-center justify-content-around">
+                            <div class="footer__google">
+                                <a href="#" class="app__link">
+                                    <img src="./assets/image/google_play1.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="footer__app-store">
+                                <a href="#" class="app__link">
+                                    <img src="./assets/image/app_store.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-12">
+                        <div class="footer__title">
+                            MY ACCOUNT 
+                        </div>
+                        <div class="footer__time">
+                            <a href="#"> My Account </a> <br>
+                            <a href="#"> Contact </a> <br>    
+                            <a href="#"> Shopping cart </a> <br>
+                            <a href="#"> Checkout </a> <br>
+                            <a href="#"> Shop </a> <br>
+                            <a href="#"> Order History </a> <br>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-12">
+                        <div class="footer__title">
+                            CUSTOMER SERVICE 
+                        </div>
+                        <div class="footer__time">
+                            <a href="#"> Contact Us </a> <br>
+                            <a href="#"> Terms of use </a> <br>    
+                            <a href="#"> Privacy Policy </a> <br>
+                            <a href="#"> Site Map </a> <br>
+                            <a href="#"> My Account </a> <br>
+                            <a href="#"> Returns </a> <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Payment -->
+        <section class="about py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12 d-flex align-items-center justify-content-between">
+                        <div class="make-with col-md-6 col-6">
+                            <p>© 2021 <span>Lukani</span>. Make With ❤ By <span>MC</span></p>
+                        </div>
+                        <div class="about__img col-md-6 col-6">
+                            <a href="about__link">
+                                <img src="./assets/image/payment.webp" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

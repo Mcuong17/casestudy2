@@ -1,0 +1,229 @@
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+$text-color: #222222;
+$primary-color: #79A206;
+$red-color: #DC0F0F;
+$white-color: #fff;
+$gray-color: #F2F5F1;
+$border-color: #e1e1e1;
+$black-color: #000;
+$star-color: #FEB954;
+.border-none {
+    border: none !important;
+}
+.main {
+    border-bottom: 1px solid #e1e1e1;
+  }
+  
+.title {
+    background-color: #F2F5F1;
+  }
+.title .title__text {
+    span {
+        display: inline-block;
+        width: 100%;
+        font-size: 40px;
+        text-align: center;
+        font-weight: 500;
+    }
+    font-size: 15px;
+    color: #222222;
+    font-weight: 500;
+  }
+
+.cart__table {
+    border: 1px solid $border-color;
+    
+  }
+
+.cart__title {
+  .cart__title-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background-color: $gray-color;
+      border-top: 1px solid $border-color;
+      border-left: 1px solid $border-color;
+      border-right: 1px solid $border-color;
+      border-bottom: 4px solid $primary-color;
+      border-radius: 3px;
+  }
+  .cart__title-items {
+      font-size: 16px;
+      color: $text-color;
+      font-weight: 500;
+  }
+}
+
+.cart__body {
+    
+    table {
+        
+    }
+    td {
+        border: 1px solid $border-color;
+    }
+    .cart__body-head {
+        border-bottom: 4px solid $primary-color;
+    }
+    .cart__body-img {
+        display: inline-block;
+        width: 100px;
+        margin: 20px 0;
+    }
+    .cart__body-row {
+        height: 50px;
+    }
+    .cart__body-row td {
+        line-height: 50px;
+    }
+    .cart__body-icon {
+        font-size: 25px;
+        text-align: center;
+        vertical-align: middle;
+        padding: 35px 0;
+        margin: 20px 0;
+        transition: all ease 0.3s;
+    }
+    .cart__body-icon:hover {
+        color: $primary-color;
+        cursor: pointer;
+    }
+    .cart__body-link {
+        display: inline-block;
+        font-size: 16px;
+        color: $text-color;
+        text-decoration: none;
+        padding: 35px 0;
+        font-weight: 400;
+    }
+    .cart__body-link:hover {
+        color: $primary-color;
+    }
+    .cart__body-price,
+    .cart__body-total,
+        span {
+        display: inline-block;
+        font-size: 16px;
+        color: $text-color;
+        padding: 35px 0;
+        font-weight: bold;
+    }
+    .cart__body-input {
+        width: 80px;
+        height: 40px;
+        border: 1px solid $border-color;
+        padding: 5px;
+    }
+    .cart__body-btn {
+        display: inline-block;
+        font-size: 14px;
+        color: $white-color;
+        background-color: #222222 ;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 0 4px;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+    }
+    .cart__body-btn:hover {
+        background-color: $primary-color;
+        color: $white-color;
+    }
+}
+
+.cart__coupon-code {
+    .cart__coupon-head {
+        width: 100%;
+        background-color: #222222;
+        text-align: left;
+        p {
+            display: inline-block;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: $white-color;
+            font-weight: bold;
+            margin: 10px 0 10px 16px ;
+        }
+    }
+    .cart__coupon-body {
+        border: 1px solid $border-color;
+        text-align: left;
+        padding: 20px;
+        p {
+            font-size: 14px;
+            color: $text-color;
+            font-weight: 400;
+        }
+        .cart__coupon-box {
+            input {
+                padding: 8px;
+                font-size: 14px;
+                border: 1px solid $border-color;
+                margin-right: 16px;
+            }
+            a {
+                display: inline-block;
+                padding: 8px;
+                font-size: 14px;
+                background-color: #222222;
+                color: $white-color;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 500;
+                border-radius: 3px;
+                transition: all 0.3s ease-out;
+            }
+        }
+        .cart__coupon-box a:hover {
+            background-color: $primary-color;
+        }
+
+        
+    }
+}
+
+.cart__coupon-totals {
+    border: 1px solid $border-color;
+    .cart__coupon-text {
+        span {
+            font-size: 15px;
+            color: $text-color;
+            font-weight: bold;
+        }
+        p {
+            font-size: 18px;
+            color: $text-color;
+            font-weight: bold;
+        }
+        a {
+            color: $text-color;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.2s linear;
+        }
+        button {
+            border: none;
+            padding: 8px 10px;
+            font-size: 15px;
+            font-weight: 500;
+            color: $white-color;
+            background-color: $primary-color;
+            margin-bottom: 20px;
+            border-radius: 3px;
+            transition: all 0.2s linear;
+        }
+    }
+    .cart__coupon-text a:hover {
+        color: $primary-color;
+    }
+    .cart__coupon-text button:hover {
+        background-color: #222222;
+        color: $white-color;
+    }
+}

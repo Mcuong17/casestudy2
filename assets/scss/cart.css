@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.border-none {
+  border: none !important;
+}
+
+.main {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.title {
+  background-color: #F2F5F1;
+}
+
+.title .title__text {
+  font-size: 15px;
+  color: #222222;
+  font-weight: 500;
+}
+.title .title__text span {
+  display: inline-block;
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.cart__table {
+  border: 1px solid #e1e1e1;
+}
+
+.cart__title .cart__title-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #F2F5F1;
+  border-top: 1px solid #e1e1e1;
+  border-left: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
+  border-bottom: 4px solid #79A206;
+  border-radius: 3px;
+}
+.cart__title .cart__title-items {
+  font-size: 16px;
+  color: #222222;
+  font-weight: 500;
+}
+
+.cart__body td {
+  border: 1px solid #e1e1e1;
+}
+.cart__body .cart__body-head {
+  border-bottom: 4px solid #79A206;
+}
+.cart__body .cart__body-img {
+  display: inline-block;
+  width: 100px;
+  margin: 20px 0;
+}
+.cart__body .cart__body-row {
+  height: 50px;
+}
+.cart__body .cart__body-row td {
+  line-height: 50px;
+}
+.cart__body .cart__body-icon {
+  font-size: 25px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 35px 0;
+  margin: 20px 0;
+  transition: all ease 0.3s;
+}
+.cart__body .cart__body-icon:hover {
+  color: #79A206;
+  cursor: pointer;
+}
+.cart__body .cart__body-link {
+  display: inline-block;
+  font-size: 16px;
+  color: #222222;
+  text-decoration: none;
+  padding: 35px 0;
+  font-weight: 400;
+}
+.cart__body .cart__body-link:hover {
+  color: #79A206;
+}
+.cart__body .cart__body-price,
+.cart__body .cart__body-total,
+.cart__body span {
+  display: inline-block;
+  font-size: 16px;
+  color: #222222;
+  padding: 35px 0;
+  font-weight: bold;
+}
+.cart__body .cart__body-input {
+  width: 80px;
+  height: 40px;
+  border: 1px solid #e1e1e1;
+  padding: 5px;
+}
+.cart__body .cart__body-btn {
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  background-color: #222222;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 4px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+.cart__body .cart__body-btn:hover {
+  background-color: #79A206;
+  color: #fff;
+}
+
+.cart__coupon-code .cart__coupon-head {
+  width: 100%;
+  background-color: #222222;
+  text-align: left;
+}
+.cart__coupon-code .cart__coupon-head p {
+  display: inline-block;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  margin: 10px 0 10px 16px;
+}
+.cart__coupon-code .cart__coupon-body {
+  border: 1px solid #e1e1e1;
+  text-align: left;
+  padding: 20px;
+}
+.cart__coupon-code .cart__coupon-body p {
+  font-size: 14px;
+  color: #222222;
+  font-weight: 400;
+}
+.cart__coupon-code .cart__coupon-body .cart__coupon-box input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #e1e1e1;
+  margin-right: 16px;
+}
+.cart__coupon-code .cart__coupon-body .cart__coupon-box a {
+  display: inline-block;
+  padding: 8px;
+  font-size: 14px;
+  background-color: #222222;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 3px;
+  transition: all 0.3s ease-out;
+}
+.cart__coupon-code .cart__coupon-body .cart__coupon-box a:hover {
+  background-color: #79A206;
+}
+
+.cart__coupon-totals {
+  border: 1px solid #e1e1e1;
+}
+.cart__coupon-totals .cart__coupon-text span {
+  font-size: 15px;
+  color: #222222;
+  font-weight: bold;
+}
+.cart__coupon-totals .cart__coupon-text p {
+  font-size: 18px;
+  color: #222222;
+  font-weight: bold;
+}
+.cart__coupon-totals .cart__coupon-text a {
+  color: #222222;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.2s linear;
+}
+.cart__coupon-totals .cart__coupon-text button {
+  border: none;
+  padding: 8px 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #79A206;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  transition: all 0.2s linear;
+}
+.cart__coupon-totals .cart__coupon-text a:hover {
+  color: #79A206;
+}
+.cart__coupon-totals .cart__coupon-text button:hover {
+  background-color: #222222;
+  color: #fff;
+}/*# sourceMappingURL=cart.css.map */
